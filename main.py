@@ -16,7 +16,7 @@ logger.setLevel(logging.DEBUG)
 @bot.message_handler(commands=['start'])
 def start(message):
     username = message.from_user.username
-    bot.reply_to(message, f'Hi, {username}!')
+    bot.reply_to(message, f'Yes, I\'m here!\nHey, {username}.What do you need?')
 
 
 @server.route(f'/{bot_token}', methods=['POST'])
